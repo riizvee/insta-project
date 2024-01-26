@@ -1,0 +1,81 @@
+
+    .post{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+       border: 2px solid black;
+       padding-bottom: 10px;
+    }
+    
+    .post img{
+      height: 90%;
+      width: 100%;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+    
+    .ri-heart-fill{
+  color: white;
+    font-size: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        transition: ease-in-out 10s;
+        opacity: 80%;
+    }
+    .ri-heart-2-fill{
+        font-size: 50px;
+        margin: 10px;
+    }
+
+    
+    .post2{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+       border: 2px solid black;
+       padding-bottom: 10px;
+    }
+    
+    .post2 img{
+      height: 90%;
+      width: 100%;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+    
+
+    .ri-heart-line{
+        color: white;
+          font-size: 80px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              display: none;
+              transition: ease-in-out 10s;
+              opacity: 80%;
+          }
+    .ri-heart-line{
+        font-size: 50px;
+        margin: 10px;
+    
+    }
+    
+    .ri-send-plane-fill{
+        font-size: 50px;
+        margin: 10px;
+       
+    }
+    .btn{
+    display: flex;
+   align-items: center;
+   transform: translate(10px, -15px);
+
+    }

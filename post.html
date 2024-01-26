@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+<style>
+
+html, body{
+height: 100%;
+width: 100%;
+background-color: aqua;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.post{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+   padding: 10px;
+   border: 2px solid black;
+}
+
+.post img{
+  height: 90%;
+  width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.ri-heart-fill{
+    color: white;
+font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: ease-in-out 10s;
+    opacity: 80%;
+}
+.ri-heart-2-fill{
+    font-size: 40px;
+    margin: 10px;
+
+}
+
+.ri-send-plane-fill{
+    font-size: 40px;
+    margin: 10px;
+   
+}
+</style>
+
+</head>
+<body>
+    
+
+<div class="post"><i class="ri-heart-fill"></i><img src="img/catty1.jpg" alt=""><i class="ri-heart-2-fill"></i><i class="ri-send-plane-fill"></i> </div>
+
+</body>
+
+<script>
+
+var i = document.querySelector(".ri-heart-fill");
+var l = document.querySelector(".ri-heart-2-fill");
+
+document.addEventListener("dblclick",function (params) {
+    l.style.color="red"
+    i.style.display="block"
+    setTimeout(() => {
+        i.style.display="none"
+    }, 800);
+
+   
+})
+
+
+</script>
+</html>

@@ -1,0 +1,38 @@
+
+
+.curser1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    background-image: url(img/catcurs.jpg);
+    background-size: cover;
+    object-fit:cover;
+    object-position: center;
+    border-radius: 50%;
+    position: absolute;
+transform: translate(-0%,-0%);
+transition:linear 100ms;
+z-index: 1;
+}
+
+.curser2{
+    height: 70px;
+    width: 70px;
+    background-color:gray;
+    border-radius: 50%;
+    position: absolute;
+transform: translate(-0%,-0%);
+transition: linear 300ms;
+z-index: 0;
+}
+
+.curser3{
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+transform: translate(-0%,-0%);
+transition: linear 500ms;
+z-index: 0;
+}

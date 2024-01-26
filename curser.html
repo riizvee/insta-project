@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curser1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+transform: translate(-50%,-50%);
+transition:linear 100ms;
+}
+
+.curser2{
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+transform: translate(-50%,-50%);
+transition: linear 300ms;
+}
+
+.curser3{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+transform: translate(-50%,-50%);
+transition: linear 500ms;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="curser1"></div>
+    <div class="curser2"></div>
+    <div class="curser3"></div>
+</body>
+
+<script>
+
+var curser1 = document.querySelector(".curser1");
+var curser2 = document.querySelector(".curser2");
+var curser3 = document.querySelector(".curser3");
+
+
+addEventListener("mousemove",function (dets) {
+    curser1.style.left=dets.x+"px";
+    curser1.style.top=dets.y+"px";
+  
+    curser2.style.left=dets.x+"px";
+    curser2.style.top=dets.y+"px";
+  
+    curser3.style.left=dets.x+"px";
+    curser3.style.top=dets.y+"px";
+  
+})
+
+
+</script>
+
+</html>
